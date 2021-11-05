@@ -1,10 +1,11 @@
 body {
+  color: rgb(16, 196, 10);
   font-family: sans-serif;
   background-color: darkslategray;
-  background-image: url('img/thematrix.jpg');
+  background-image:url(https://github.com/y0ung4my/Programming-Language-Selector/blob/main/img/thematrix.jpg?raw=true);
 }
 
-.box {
+.box, .result {
   width: 50%;
   padding: 50px;
   border: solid rgb(1, 12, 6);
@@ -20,3 +21,14 @@ body {
   font-size: large;
 }
 
+.title-box {
+  width: 30%;
+  padding: 50px;
+  border: solid rgb(1, 12, 6);
+  border-width: 30px;
+  background-color:rgb(16, 196, 10);
+  margin-bottom: 10px;
+  box-sizing: content-box;
+  color: black;
+
+}
