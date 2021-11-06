@@ -15,6 +15,10 @@
       <p>Take this quiz to find out what programming language you should learn!</p>
     </div>
     <form id="programming-language-quiz">
+      <div class="form-group">
+        <label for="enter-name">Enter Your Name</label>
+        <input id="enter-name" class="form-control" type="text">
+      </div>
       <div class="box" id="box-1">
         <div class="radio" id="radio1">
           <h3>What is your favorite search engine?</h3>
@@ -79,7 +83,7 @@
         </div>
       </div>
       <div class="box" id="box-4">
-        <div class="radio" id="radio">
+        <div class="radio" id="radio4">
           <h3>What is your favorite search engine?</h3>
           <label>
             <input type="radio" name="company" value="c#" checked>
@@ -100,7 +104,7 @@
         </div>  
       </div>
       <div class="box" id="box-5">
-        <div class="radio" id="radio1">
+        <div class="radio" id="radio5">
           <h3>What is your favorite search engine?</h3>
           <label>
             <input type="radio" name="learning" value="c#" checked>
@@ -120,18 +124,42 @@
           </label>
         </div>  
       </div>
+      <!-- TIE-BREAKER -->
+      <!-- <div class="box" id="tie-breaker">
+        <div class="radio" id="radio6">
+          <h3>What is your favorite search engine?</h3>
+          <label>
+            <input type="radio" name="color" value="C#" checked>
+            Green
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="Python">
+            Blue
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="Ruby">
+            Red
+          </label>
+          <button type="submit-tie-breaker" class="btn">Pick my party!</button>
+        </div> -->
+        <!-- END TIE-BREAKER -->
+      </div>
       <button type="submit" class="btn">Pick my party!</button>
     </form>
     <div class="result">
       <p>Hi, <span class="name"></span>! Based on your preferences, you should learn the <span class="language"></span> programming language.</p>
       <h2>About <span class="language"></span></h2>
-      <p class="result-description" id="C#">
+      <p class="result-description" id="c-sharp">
         C# is widely used for developing desktop applications, web applications and web services. It is used in creating applications of Microsoft at a large scale. C# is also used in game development in Unity. <a href="https://www.geeksforgeeks.org/introduction-to-c-sharp/">[source]</a> Often used in game development, Microsoft applications, and more!
       </p>
-      <p class="result-description" id="Python">
+      <p class="result-description" id="python">
         Python is often used as a support language for software developers, for build control and management, testing, and in many other ways. SCons for build control. <a href="https://www.python.org/about/apps/">[source]</a> Used in popular apps such as Instagram, Pinterest, and Spotify.
       </p>
-      <p class="result-description" id="Ruby">
+      <p class="result-description" id="ruby">
         Ruby is most used for building web applications. However, it is a general-purpose language similar to Python, so it has many other applications like data analysis, prototyping, and proof of concepts. Probably the most obvious implementation of Ruby is Rails web, the development framework built with Ruby. <a href="https://careerkarma.com/blog/what-is-ruby-used-for/">[source]</a> AirBnB, GitHub, and Shopify were built using Ruby on Rails!
       </p>
       </div>

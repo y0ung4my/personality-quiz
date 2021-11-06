@@ -1,65 +1,101 @@
 $(document).ready(function() {
   $("form#programming-language-quiz").submit(function(event) {
     event.preventDefault();
-
+    const nameInput = $("input#enter-name").val();
     var cSharp = 0;
     var python = 0;
     var ruby = 0;
 
-    if ($("input:radio[name=search-engine]:checked").val() === "c#") {
+    if ($("input:radio[name='search-engine']:checked").val() === "c#") {
       cSharp += 1;
     }
-    else if ($("input:radio[name=search-engine]:checked").val() === "python") {
-      python += 1;
-    }
-    else {
-      ruby += 1;
-    }
-    
-    if ($("input:radio[name=application]:checked").val() === "c#") {
-      cSharp += 1;
-    }
-    else if ($("input:radio[name=application]:checked").val() === "python") {
+    else if ($("input:radio[name='search-engine']:checked").val() === "python") {
       python += 1;
     }
     else {
       ruby += 1;
     }
 
-    if ($("input:radio[name=operating-system]:checked").val() === "c#") {
+    if ($("input:radio[name='application']:checked").val() === "c#") {
       cSharp += 1;
     }
-    else if ($("input:radio[name=operating-system]:checked").val() === "python") {
+    else if ($("input:radio[name='application']:checked").val() === "python") {
       python += 1;
     }
     else {
       ruby += 1;
     }
 
-    if ($("input:radio[name=company]:checked").val() === "c#") {
+    if ($("input:radio[name='operating-system']:checked").val() === "c#") {
       cSharp += 1;
     }
-    else if ($("input:radio[name=company]:checked").val() === "python") {
+    else if ($("input:radio[name='operating-system']:checked").val() === "python") {
       python += 1;
     }
     else {
       ruby += 1;
     }
 
-    if ($("input:radio[name=learning]:checked").val() === "c#") {
+    if ($("input:radio[name='company']:checked").val() === "c#") {
       cSharp += 1;
     }
-    else if ($("input:radio[name=learning]:checked").val() === "python") {
+
+    else if ($("input:radio[name='company']:checked").val() === "python") {
+      python += 1;
+    }
+
+    else {
+      ruby += 1;
+    }
+
+    if ($("input:radio[name='learning']:checked").val() === "c#") {
+      cSharp += 1;
+    }
+    else if ($("input:radio[name='learning']:checked").val() === "python") {
       python += 1;
     }
     else {
       ruby += 1;
     }
 
-    if (cSharp >= 0) {
-      //show result and description//
-      
+    alert(cSharp);
+    alert(python);
+    alert(ruby);
+
+    if (cSharp >= 3) {
+      $(".name").text(nameInput);
+      $(".language").text("C#");
+      $(".result").show();
+      $("p.result-description#c-sharp").show();
+      $("p.result-description#python").hide();
+      $("p.result-description#ruby").hide();
     }
+
+    else if (python >=3) {
+      $(".name").text(nameInput);
+      $(".language").text("Python");
+      $(".result").show();
+      $("p.result-description#python").show();
+      $("p.result-description#c-sharp").hide();
+      $("p.result-description#ruby").hide();
+    }
+
+    else if (ruby >=3) {
+      $(".name").text(nameInput);
+      $(".language").text("Ruby");
+      $(".result").show();
+      $("p.result-description#ruby").show();
+      $("p.result-description#c-sharp").hide();
+      $("p.result-description#python").hide();
+    }
+
+    // else {
+    //   $(".name").text(nameInput);
+    //   $("#tie-breaker").show();
+    //   $("p.result-description#c-sharp");
+    //   $(".language").text($("input:radio[name='color']:checked").val());
+    //   $(".result").show();
+    // }
   });
 });
 

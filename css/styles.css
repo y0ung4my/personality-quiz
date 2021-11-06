@@ -5,6 +5,25 @@ body {
   background-image:url(https://github.com/y0ung4my/Programming-Language-Selector/blob/main/img/thematrix.jpg?raw=true);
 }
 
+.result {
+  display: none;
+}
+
+/* #tie-breaker {
+  display: none;
+} */
+
+#c-sharp {
+  display: none;
+}
+#python {
+  display: none;
+}
+
+#ruby {
+  display: none;
+}
+
 .box, .result, .title-box {
   width: auto;
   padding: 50px;
