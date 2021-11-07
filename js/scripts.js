@@ -69,6 +69,9 @@ $(document).ready(function() {
       $("p.result-description#c-sharp").show();
       $("p.result-description#python").hide();
       $("p.result-description#ruby").hide();
+      $(".question-box").hide();
+      $("#start-again-button").show();
+      $("#submit-button").hide();
     }
 
     else if (python >=3) {
@@ -78,24 +81,32 @@ $(document).ready(function() {
       $("p.result-description#python").show();
       $("p.result-description#c-sharp").hide();
       $("p.result-description#ruby").hide();
+      $(".question-box").hide();
+      $("#start-again-button").show();
+      $("#submit-button").hide();
     }
 
-    else if (ruby >=3) {
+    else {
       $(".name").text(nameInput);
       $(".language").text("Ruby");
       $(".result").show();
       $("p.result-description#ruby").show();
       $("p.result-description#c-sharp").hide();
       $("p.result-description#python").hide();
+      $(".question-box").hide();
+      $("#start-again-button").show();
+      $("#submit-button").hide();
     }
 
-    // else {
-    //   $(".name").text(nameInput);
-    //   $("#tie-breaker").show();
-    //   $("p.result-description#c-sharp");
-    //   $(".language").text($("input:radio[name='color']:checked").val());
-    //   $(".result").show();
-    // }
+    $("#start-again-button").click(function() {
+      $(".question-box").show();
+      $(".result").hide();
+      $("#submit-button").show();
+      $("#start-again-button").hide();
+    }
+    
+    )
+    });
   });
-});
+
 

@@ -8,7 +8,6 @@
   <title>Programming Language Selector Quiz</title>
 </head>
 <body>
-  <!-- <img src="img/thematrix.jpg"> -->
   <div class="container">
     <div class="title-box">
       <h1>Programming Language Selector</h1>
@@ -16,21 +15,23 @@
     </div>
     <form id="programming-language-quiz">
       <div class="form-group">
-        <label for="enter-name">Enter Your Name</label>
-        <input id="enter-name" class="form-control" type="text">
+        <div class="question-box">
+          <label for="enter-name">Enter Your Name</label>
+          <input id="enter-name" class="form-control" type="text">
+        </div>
       </div>
-      <div class="box" id="box-1">
+      <div class="question-box">
         <div class="radio" id="radio1">
           <h3>What is your favorite search engine?</h3>
           <label>
             <input type="radio" name="search-engine" value="c#" checked>
-            Google
+            Bing
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="search-engine" value="python">
-            Bing
+            Google
           </label>
         </div>
         <div class="radio">
@@ -40,115 +41,93 @@
           </label>
         </div>      
       </div>
-      <div class="box" id="box-2">
+      <div class="question-box">
         <div class="radio" id="radio2">
-          <h3>What is your favorite search engine?</h3>
+          <h3>What kind of applications are you interested in?</h3>
           <label>
             <input type="radio" name="application" value="c#" checked>
-            Google
+            Microsoft applications and corporate software
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="application" value="python">
-            Bing
+            Instagram and Pinterest
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="application" value="ruby">
-            duckduckgo
+            AirBnB and Soundcloud
           </label>
         </div>
       </div>
-      <div class="box" id="box-3">
+      <div class="question-box">
         <div class="radio" id="radio3">
-          <h3>What is your favorite search engine?</h3>
+          <h3>What is your favorite operating system?</h3>
           <label>
             <input type="radio" name="operating-system" value="c#" checked>
-            Google
+            Windows
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="operating-system" value="python">
-            Bing
+            Mac OS
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="operating-system" value="ruby">
-            duckduckgo
+            Linux
           </label>
         </div>
       </div>
-      <div class="box" id="box-4">
+      <div class="question-box">
         <div class="radio" id="radio4">
-          <h3>What is your favorite search engine?</h3>
+          <h3>What companies sound appealing to work for?</h3>
           <label>
             <input type="radio" name="company" value="c#" checked>
-            Google
+            Microsoft, Stack Overflow, Intuit
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="company" value="python">
-            Bing
+            IBM, NASA, Netflix
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="company" value="ruby">
-            duckduckgo
+            Groupon, Bloomberg, Shopify
           </label>
         </div>  
       </div>
-      <div class="box" id="box-5">
+      <div class="question-box">
         <div class="radio" id="radio5">
-          <h3>What is your favorite search engine?</h3>
+          <h3>What do you think you want to learn?</h3>
           <label>
             <input type="radio" name="learning" value="c#" checked>
-            Google
+            C#
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="learning" value="python">
-            Bing
+            Python
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="learning" value="ruby">
-            duckduckgo
+            Ruby
           </label>
         </div>  
       </div>
-      <!-- TIE-BREAKER -->
-      <!-- <div class="box" id="tie-breaker">
-        <div class="radio" id="radio6">
-          <h3>What is your favorite search engine?</h3>
-          <label>
-            <input type="radio" name="color" value="C#" checked>
-            Green
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="color" value="Python">
-            Blue
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="color" value="Ruby">
-            Red
-          </label>
-          <button type="submit-tie-breaker" class="btn">Pick my party!</button>
-        </div> -->
-        <!-- END TIE-BREAKER -->
+      <div class="button-box" id="submit-button">
+        <button type="submit" class="btn">SUBMIT</button>
       </div>
-      <button type="submit" class="btn">Pick my party!</button>
     </form>
     <div class="result">
       <p>Hi, <span class="name"></span>! Based on your preferences, you should learn the <span class="language"></span> programming language.</p>
@@ -162,14 +141,10 @@
       <p class="result-description" id="ruby">
         Ruby is most used for building web applications. However, it is a general-purpose language similar to Python, so it has many other applications like data analysis, prototyping, and proof of concepts. Probably the most obvious implementation of Ruby is Rails web, the development framework built with Ruby. <a href="https://careerkarma.com/blog/what-is-ruby-used-for/">[source]</a> AirBnB, GitHub, and Shopify were built using Ruby on Rails!
       </p>
-      </div>
     </div>
-
-
-
-
+    <div class="button-box" id="start-again-button">
+      <button class="btn">START AGAIN!</button>
+    </div>
   </div>
 </body>
-
-
 </html>

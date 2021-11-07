@@ -5,27 +5,18 @@ body {
   background-image:url(https://github.com/y0ung4my/Programming-Language-Selector/blob/main/img/thematrix.jpg?raw=true);
 }
 
-.result {
+.result, #tie-breaker, #c-sharp, #python, #ruby, #start-again-button {
   display: none;
 }
 
-/* #tie-breaker {
-  display: none;
-} */
-
-#c-sharp {
-  display: none;
-}
-#python {
-  display: none;
+button:hover {
+  text-decoration: yellow;
+  transform: scale(200%);
 }
 
-#ruby {
-  display: none;
-}
-
-.box, .result, .title-box {
+.question-box, .result, .title-box {
   width: auto;
+  margin: auto;
   padding: 50px;
   border: solid rgb(1, 12, 6);
   border-width: 30px;
@@ -34,6 +25,21 @@ body {
   box-sizing: content-box;
   color: black;
   opacity: 90%;
+}
+
+.button-box {
+  width: 20%;
+  margin: auto;
+  padding: 50px;
+  border: solid rgb(1, 12, 6);
+  border-width: 30px;
+  background-color:rgb(16, 196, 10);
+  margin-bottom: 10px;
+  box-sizing: content-box;
+  color: black;
+  opacity: 90%;
+  text-align: center;
+  font-weight: bold;
 }
 
 .title-box {
