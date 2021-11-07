@@ -1,11 +1,11 @@
-# _{Application Name}_
-Programming Quiz
+# _Programming Language Selector_
 
-#### By _**{List of contributors}**_
+
+#### By 
 Amy Young <youngamy1223@gmail.com>
 
-#### _{Brief description of application}_
-This is a webpage made to help programmers decide what programming language to learn. The quiz uses a form of radio buttons, which once submitted, will reveal the result of what kind of programming language to learn. First edition of this website includes three choices: C#, Python, and Ruby. 
+#### _This is a webpage made to help programmers decide what programming language to learn. The quiz uses a form of radio buttons, which once submitted, will reveal the result of what kind of programming language to learn. First edition of this website includes three choices: C#, Python, and Ruby._
+
 
 ## Technologies Used
 
