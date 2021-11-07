@@ -9,9 +9,8 @@ body {
   display: none;
 }
 
-button:hover {
-  text-decoration: yellow;
-  transform: scale(200%);
+.title-box {
+  text-align: center;
 }
 
 .question-box, .result, .title-box {
@@ -42,12 +41,12 @@ button:hover {
   font-weight: bold;
 }
 
-.title-box {
-  text-align: center;
+button:hover {
+  text-decoration: yellow;
+  transform: scale(200%);
 }
 
 .language {
   font-weight: bold;
-  font-size: large;
 }
 

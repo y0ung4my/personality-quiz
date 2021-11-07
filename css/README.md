@@ -16,7 +16,7 @@ This is a webpage made to help programmers decide what programming language to l
 
 ## Description
 
-Each question is in its own CSS-styled box. The question boxes are hidden when the form is submitted and the result is shown, along with a "start over" button. Once the "start over" button is clicked, the results and "start over" button are hidden again while the results and submit button are shown once again.
+Each question is in its own CSS-styled box. The question boxes are hidden when the form is submitted and the result is shown, along with a "start over" button. Once the "start over" button is clicked, the results and "start over" button are hidden again while the results and submit button are shown once again. The scoring system used adds a tally to the programming language each answer is matched with rather than assigning a number value to each answer, leading to less overlap in results.
 
 ## Setup/Installation Requirements
 

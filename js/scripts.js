@@ -6,6 +6,7 @@ $(document).ready(function() {
     var python = 0;
     var ruby = 0;
 
+    // QUESTION #1 SCORE
     if ($("input:radio[name='search-engine']:checked").val() === "c#") {
       cSharp += 1;
     }
@@ -16,6 +17,7 @@ $(document).ready(function() {
       ruby += 1;
     }
 
+    // QUESTION #2 SCORE
     if ($("input:radio[name='application']:checked").val() === "c#") {
       cSharp += 1;
     }
@@ -26,6 +28,7 @@ $(document).ready(function() {
       ruby += 1;
     }
 
+    // QUESTION #3 SCORE
     if ($("input:radio[name='operating-system']:checked").val() === "c#") {
       cSharp += 1;
     }
@@ -36,6 +39,7 @@ $(document).ready(function() {
       ruby += 1;
     }
 
+    // QUESTION #4 SCORE
     if ($("input:radio[name='company']:checked").val() === "c#") {
       cSharp += 1;
     }
@@ -48,6 +52,7 @@ $(document).ready(function() {
       ruby += 1;
     }
 
+    // QUESTION #5 SCORE
     if ($("input:radio[name='learning']:checked").val() === "c#") {
       cSharp += 1;
     }
@@ -58,10 +63,7 @@ $(document).ready(function() {
       ruby += 1;
     }
 
-    alert(cSharp);
-    alert(python);
-    alert(ruby);
-
+    // RESULTS
     if (cSharp >= 3) {
       $(".name").text(nameInput);
       $(".language").text("C#");
@@ -98,15 +100,14 @@ $(document).ready(function() {
       $("#submit-button").hide();
     }
 
+    // START QUIZ AGAIN
     $("#start-again-button").click(function() {
       $(".question-box").show();
       $(".result").hide();
       $("#submit-button").show();
       $("#start-again-button").hide();
-    }
-    
-    )
     });
   });
+});
 
 
