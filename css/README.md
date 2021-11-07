@@ -26,7 +26,7 @@ _Use as a template for further development_
 3) to view the webpage as you make changes, you can open the index.html file in a web browser and refresh the page once the changes are saved.
 
 _To view in GitHub Pages (requires internet connection)_
-https://github.com/y0ung4my/Programming-Language-Selector
+https://y0ung4my.github.io/Programming-Language-Selector/
 
 ## Known Bugs
 
