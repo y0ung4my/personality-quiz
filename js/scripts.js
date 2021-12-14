@@ -1,3 +1,12 @@
+function restartQuiz(name) {
+  $(".name").text(name);
+  $(".question-box").hide();
+  $(".result").show();
+  $("#start-again-button").show();
+  $("#submit-button").hide();
+}
+
+
 $(document).ready(function() {
   $("form#programming-language-quiz").submit(function(event) {
     event.preventDefault();
@@ -6,98 +15,34 @@ $(document).ready(function() {
     var python = 0;
     var ruby = 0;
 
-    // QUESTION #1 SCORE
-    if ($("input:radio[name='search-engine']:checked").val() === "c#") {
-      cSharp += 1;
-    }
-    else if ($("input:radio[name='search-engine']:checked").val() === "python") {
-      python += 1;
-    }
-    else {
-      ruby += 1;
-    }
-
-    // QUESTION #2 SCORE
-    if ($("input:radio[name='application']:checked").val() === "c#") {
-      cSharp += 1;
-    }
-    else if ($("input:radio[name='application']:checked").val() === "python") {
-      python += 1;
-    }
-    else {
-      ruby += 1;
-    }
-
-    // QUESTION #3 SCORE
-    if ($("input:radio[name='operating-system']:checked").val() === "c#") {
-      cSharp += 1;
-    }
-    else if ($("input:radio[name='operating-system']:checked").val() === "python") {
-      python += 1;
-    }
-    else {
-      ruby += 1;
-    }
-
-    // QUESTION #4 SCORE
-    if ($("input:radio[name='company']:checked").val() === "c#") {
-      cSharp += 1;
-    }
-
-    else if ($("input:radio[name='company']:checked").val() === "python") {
-      python += 1;
-    }
-
-    else {
-      ruby += 1;
-    }
-
-    // QUESTION #5 SCORE
-    if ($("input:radio[name='learning']:checked").val() === "c#") {
-      cSharp += 1;
-    }
-    else if ($("input:radio[name='learning']:checked").val() === "python") {
-      python += 1;
-    }
-    else {
-      ruby += 1;
-    }
+    $("input:radio:checked").each(function() {
+        if ($(this).val() === "c#") {
+          cSharp += 1;
+        } else {
+          python += 1;
+        }
+    });
 
     // RESULTS
     if (cSharp >= 3) {
-      $(".name").text(nameInput);
-      $(".language").text("C#");
-      $(".result").show();
       $("p.result-description#c-sharp").show();
       $("p.result-description#python").hide();
       $("p.result-description#ruby").hide();
-      $(".question-box").hide();
-      $("#start-again-button").show();
-      $("#submit-button").hide();
+      restartQuiz(nameInput);
     }
 
     else if (python >=3) {
-      $(".name").text(nameInput);
-      $(".language").text("Python");
-      $(".result").show();
       $("p.result-description#python").show();
       $("p.result-description#c-sharp").hide();
       $("p.result-description#ruby").hide();
-      $(".question-box").hide();
-      $("#start-again-button").show();
-      $("#submit-button").hide();
+      restartQuiz(nameInput);
     }
 
     else {
-      $(".name").text(nameInput);
-      $(".language").text("Ruby");
-      $(".result").show();
       $("p.result-description#ruby").show();
       $("p.result-description#c-sharp").hide();
       $("p.result-description#python").hide();
-      $(".question-box").hide();
-      $("#start-again-button").show();
-      $("#submit-button").hide();
+      restartQuiz(nameInput);
     }
 
     // START QUIZ AGAIN
